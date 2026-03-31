@@ -1,0 +1,48 @@
+<!-- HTML é uma linguagem de marcação, ou seja ela não possui lógica. 
+ Cada elemento possui uma etiqueta que chamamos de tag.
+ Quando queremos criar algo, chamamos a tag do elemento. 
+ O HTML serve apenas para dizer o que existe numa página 
+ As tags devem ser fechadas. <html> </html>
+ As tags também possuem atributos. <html lang="pt-BR"> </html>
+-->
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- HTML é a tag que deve envolver todo o documento -->
+  <head> <!-- Contém várias informações da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu site</title> <!-- Título da página -->
+  </head> 
+  <body> <!-- Dentro dessa tag é que vamos inserir os elementos que vão aparecer para o usuário. Significa "corpo" -->
+    <h1>Sobre html</h1> <!-- 'h1" é a tag de título principal -->
+    <h2>O que é html</h2>
+    <h3>A respeito de linguagem de marcação</h3>
+    <!-- "p" é a tag para escrever parágrafos -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> <!-- "br" é a tag para quebrar as linhas. Significa "break row" -->
+        Recusandae earum atque repellendus totam! Velit, ut quod? <br> 
+        Quae tempore deleniti consectetur, magnam natus nisi facere sit labore quasi itaque, nam repellendus?</p>
+    <!-- "hr" cria uma linha horizontal -->
+     <hr>
+     <!-- "a" é a tag para links. Significa "âncora". 
+      Ela sempre é acompanhada do atributo href, que indica para qual link ela vai direcionar o usuário.
+      O atributo target="_blank" faz com que o link seja aberto numa nova guia. -->
+      <a href="google.com" target="_blank">Clique aqui</a>
+      <!-- "img" é a tag de imagem. Ela sempre vem com os atributos src que indica a origem da imagem e o atributo alt que deve conter um texto explicativo da imagem, ela é usada caso a imagem não carregue e contribui para softwares de acessibilidade -->
+       <!-- Imagem via link -->
+      <img src="link.com" alt="Imagem">
+      <!-- Imagem baixada -->
+       <img src="./assets/images/OIP.webp" alt="Imagem de um pássaro">
+       <!-- "button" é a tag que cria um botão -->
+       <button>Clique aqui</button>
+       <!-- "ol" e "ul" são tags de lista. -->
+        <ol>  <!-- "ol" é uma lista ordenada, numerada. -->
+            <li>Item 1</li> <!-- "li" é a tag de item de lista. -->
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <ul> <!-- "ul" é uma lista não ordenada, não numerada. -->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>item 3</li>
+        </ul>
+  </body>
+</html>
