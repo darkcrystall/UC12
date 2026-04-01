@@ -5,25 +5,32 @@ body {
     background-color: rgb(19, 19, 19); /* Troca a cor de fundo */
     color: white; /* Troca a cor do texto */
     font-family: Tahoma, sans-serif;/* Troca o estilo da fonte do texto */
+    justify-content: center; /* Alinha na horizontal */
+    text-align: center; /* Alinha na vertical */
+}
+
+p {
+    text-align: justify; /* Deixa o texto justificado */
+    margin: 20px; /* Margem para separar */
 }
 
 img {
     width: 500px; /* Altera a largura do elemento */
     /* height: 500px; Altera a altura do elemento */
+    margin: 20px;
 }
 
 button {
     background-color: white;
     border: none; /* Retira a borda padrão */
     border-radius: 5px; /* Cantos arredondados */
-    color: black;
     /* cima direita baixo esquerda */
     margin: 15px; /* Espaçamento externo do elemento */
     padding: 5px 10px 5px 10px;  /* Espaçamento interno do elemento */
 }
 
 button:hover {
-    background-color: black;
-    color: white;
+    background-color: #525353;
+    color: #ffffff;
     cursor: pointer; /* Muda a aparência do cursor ao passar por cima */
 }
