@@ -1,0 +1,82 @@
+/* Aplica para todos os elementos. */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: white;
+    /* Espaçamento interno: cima direita baixo esquerda. */
+    padding: 15px 80px 15px 80px;
+    /* Esta propriedade transforma o container em um display flex (flexível). */
+    display: flex;
+    /* Esta propriedade faz com que os itens sejam alinhados na linha vertical. */
+    align-items: center;
+    /* Esta propriedade faz com que os itens seja alinhados na linha horizontal. */
+    justify-content: space-between;
+}
+/* Aplica estilos apenas a elementos filhos dentro de outro elemento, independente do nível.Ou seja, aplica no img dentro do header, mesmo que img esteja dentro de outro elemento. */
+header img {
+    /* px é uma unidade fixa (pixels). 
+    % é uma unidade relativa, ou seja, que se adapta. */
+    width: 10%;
+}
+
+header a {
+    color: rgb(15, 53, 119);
+    margin: 10px;
+}
+
+header i {
+    margin: 15px;
+}
+
+a {
+    text-decoration: none; /* Retira as decorações do texto, como o sublinhado. */
+    font-size: medium;
+}
+
+/* Classes no CSS devem ser declarados com ponto. */
+.banner {
+    /* Define uma imagem como fundo do elemento. */
+    background-image: url(https://api.senacrs.com.br/bff/site-senac/v1/file/3116793a23e403d871cc55c95220d7b51b5e6f.png);
+    height: 350px;
+}
+
+.cursos {
+    height: 30vh; /* vh é em relação a altura da tela, sigfinica view height. */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.curso-imagem {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden; /* Impede que um elemento filho saia para fora. */ 
+}
+
+.curso-imagem img {
+    height: 100%;
+}
+
+.borda-azul {
+    border: 4px solid rgb(15, 53, 119);
+}
+
+.borda-laranja {
+    border: 4px solid rgb(207, 152, 51);
+}
+
+.curso h3 {
+    font-size: small;
+    font-weight: normal;
+    color: rgb(15, 53, 119);
+}
