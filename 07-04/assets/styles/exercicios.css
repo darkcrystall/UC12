@@ -80,6 +80,7 @@
     padding: 20px;
     margin: 10px;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 .card-1 {
