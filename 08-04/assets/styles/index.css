@@ -1,0 +1,14 @@
+.container-pai {
+    background-color: rgb(172, 213, 216);
+    height: 100px;
+    display: flex; /* Torna o elemento num display flexível */
+    flex-direction: row; /* Controla a direção dos itens, linhas ou colunas */
+    justify-content: space-around; /* Controla o alinhamento no eixo principal, horizontal */
+    align-items: center; /* Controla o alinhamento no eixo secundário, vertical */
+    flex-wrap: wrap; /* Controla se os itens vão ou não quebrar a linha quando a tela diminuir */
+}
+
+.container-pai > div {
+    background-color: aquamarine;
+    margin: 20px;
+}
