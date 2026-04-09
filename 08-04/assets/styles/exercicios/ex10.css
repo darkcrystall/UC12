@@ -1,11 +1,14 @@
 .card {
     width: 200px;
     padding: 20px;
+    background-color: rgb(121, 177, 187);
+    border-radius: 5%;
 }
 
 .botao {
     padding: 10px;
     margin: 10px;
+    width: 100px;
 }
 
 .titulo {

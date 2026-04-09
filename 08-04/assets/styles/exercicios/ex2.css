@@ -1,4 +1,6 @@
 .box {
     width: 200px;
-    background-color: beige;
+    height: 200px;
+    background-color: #88c9c0;
+    margin: 10px;
 }

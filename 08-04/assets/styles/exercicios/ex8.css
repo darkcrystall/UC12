@@ -2,4 +2,8 @@ a {
     display: inline-block;
     text-decoration: none;
     margin: 20px;
+    padding: 20px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 10%;
 }
