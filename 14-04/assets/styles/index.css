@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header {
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 30px;
+    margin: 5px;
+}
+
+.nome-logo h2 {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.botao {
+    background: linear-gradient(90deg, rgb(105, 15, 15), rgb(36, 19, 19));
+    padding: 8px;
+    border-radius: 5%;
+}
+
+.pesquisar {
+    display: inline-block;
+}
+
+.assistir {
+    display: block;
+}
+
+a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: small;
+}
+
+i {
+    margin: 5px;
+}
+
+.cartaz {
+    background: url("../images/cartaz.jpg");
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.conteudo-cartaz {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 10px;
+    width: 30%;
+}
+
+.texto-cartaz {
+    text-align: justify;
+}
+
+.em-cartaz {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.filme-cartaz {
+    display: inline;
+}
+.filme-cartaz img {
+    height: 300px;
+    width: 200px;
+}
