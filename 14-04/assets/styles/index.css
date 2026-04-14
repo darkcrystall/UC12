@@ -22,7 +22,7 @@ header {
     margin: 5px;
 }
 
-.nome-logo h2 {
+.nome-logo h1 {
     display: flex;
     justify-content: center;
     font-size: small;
@@ -58,7 +58,6 @@ i {
     height: 40vh;
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .conteudo-cartaz {
@@ -67,9 +66,18 @@ i {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 60px;
+    padding-top: 80px;
     gap: 10px;
     width: 30%;
+}
+
+.titulo-cartaz h1 {
+    font-size: 32px;
+}
+
+.descricao-cartaz h2 {
+    font-size: small;
 }
 
 .texto-cartaz {
@@ -86,6 +94,7 @@ i {
 .filme-cartaz {
     display: inline;
 }
+
 .filme-cartaz img {
     height: 300px;
     width: 200px;
