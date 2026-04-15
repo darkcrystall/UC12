@@ -1,0 +1,21 @@
+div {
+    height: 400px;
+    width: 400px;
+    background-color: beige;
+}
+
+.container-pai {
+    background-color: bisque;
+    height: 400px;
+    width: 100%;
+}
+
+.container-filho {
+    width: 10%;
+}
+
+.container {
+    background-color: aquamarine;
+    height: 10vh;
+    width: 10vw;
+}
