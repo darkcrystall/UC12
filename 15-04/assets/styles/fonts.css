@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Coolvetica";
+    src: url("../fonts/CoolveticaRg.otf");
+}
+
+.bj-cree-regular {
+    font-family: "BJ Cree", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .bj-cree-medium {
+    font-family: "BJ Cree", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .bj-cree-semibold {
+    font-family: "BJ Cree", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .bj-cree-bold {
+    font-family: "BJ Cree", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+header p {
+    font-family: "Coolvetica";
+}
