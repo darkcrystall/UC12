@@ -6,12 +6,14 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    background: linear-gradient(90deg, #768D4F, #4A5C38)
 }
 
 .container-card {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 50px;
     gap: 20px;
 }
 
@@ -20,42 +22,65 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 2px 2px 2px rgb(58, 57, 57);
-    height: 40vh;
+    box-shadow: 2px 6px 10px rgb(58, 57, 57);
+    height: 70vh;
     width: 20vw;
     border-radius: 5%;
     margin: 10px;
-    padding: 20px;
     gap: 10px;
 }
 
-.primeiro {
-    background-color: #9fdfdf;
-    border: 2px solid #648686;
+#primeiro-card {
+    background-color: #a294aa;
+    border: 2px solid #866486;
 }
 
-.segundo {
-    background-color: #8bd1c5;
-    border: 2px solid #5c8b81;
+#segundo-card {
+    background-color: #dce4e2;
+    border: 2px solid #adb6b4;
 }
 
-.terceiro {
-    background-color: #8bb5d1;
-    border: 2px solid #5c788b;
+#terceiro-card {
+    background-color: #dad884;
+    border: 2px solid #b3ae74;
 }
 
-.titulo {
+.titulo h1 {
     font-size: 1rem;
+    padding: 0px 10px 0px 10px;
+    font-style: italic;
 }
 
 .paragrafo {
     font-size: 0.8rem;
+    padding: 5px 20px 5px 20px;
+    text-align: justify;
 }
 
 .banner {
-    background-color: aliceblue;
-    height: 30%;
+    height: 30vh;
     width: 100%;
+    margin: 10px 0px 5px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+#primeiro-banner {
+    background: url('../images/hederacea.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#segundo-banner {
+    background: url('../images/chamomilla.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#terceiro-banner {
+    background: url('../images/calendula.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -65,7 +90,14 @@ a {
 
 .botao {
     background-color: white;
-    padding: 16px;
+    font-size: 0.8rem;
+    padding: 10px;
     margin: 5px;
     border-radius: 10%;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
