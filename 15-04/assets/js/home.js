@@ -22,6 +22,8 @@ function trocaMensagem() {
       break;
   }
 }
+// Operador ternário: condição ? se verdadeiro : se falso
+titulo.textContent == "Texto" ? titulo.textContent = "Texto trocado" : titulo.textContent = "Texto"; 
 // Adiciona um evento ao botão
 // Um evento é uma ação do usuário
 // "addEventListener" precisa de dois argumentos: o primeiro é uma ação, que dispara uma função; o segundo é qual função deve ser disparada.
