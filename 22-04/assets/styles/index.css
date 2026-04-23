@@ -15,6 +15,7 @@ body {
     font-family: "Comfortaa", sans-serif;
     position: fixed; /* Essa propriedade determina a posição. Sendo ela fixa, o scroll é desabilitado. */
     font-size: 16px;
+    letter-spacing: 2px;
 }
 
 .background {
@@ -57,6 +58,7 @@ body {
 
 .score-info h6 {
     display: inline;
+    font-size: 0.8em;
 }
 
 .quiz-question.active {
@@ -82,6 +84,7 @@ body {
     background-color: rgba(11, 11, 19, 0.596);
     color: white;
     font-family: inherit; /* "inherit" serve para que seja atribuído o valor em herança. */
+    letter-spacing: inherit;
     border-radius: 5px;
     text-align: left;
     border: none;
