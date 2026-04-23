@@ -25,6 +25,12 @@ function activateQuestion() {
 function answer(isCorrect) {
   // Se a resposta estiver correta
   if (isCorrect) {
+    // Precisa ver porque isso não funciona
+    // if (currentQuestionIndex === questions.length) {
+    //   questionInfo.textContent = "";
+    //   pontuacao.textContent = `Quiz finalizado! \n Acertou: ${currentQuestionIndex} de ${questionInfo}`;
+    //   return;
+    // }
     /*
         classList.remove('active') -> remove a classe
         Isso faz a pergunta atual sumir da tela 
