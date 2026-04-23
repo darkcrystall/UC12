@@ -13,7 +13,7 @@
 
 body {
     font-family: "Comfortaa", sans-serif;
-    position: fixed;
+    position: fixed; /* Essa propriedade determina a posição. Sendo ela fixa, o scroll é desabilitado. */
     font-size: 16px;
 }
 
@@ -25,21 +25,20 @@ body {
 }
 
 .container {
+    height: inherit; /* "inherit" serve para que seja atribuído o valor em herança. */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .quiz-question {
     display: none;
     background-color: rgba(22, 26, 37, 0.534);
     color: white;
-    width: 400px;
+    width: 500px;
     height: fit-content;
     padding: 20px;
-    margin: 5% 0px 5% 0px;
+    margin: 2% 0px 2% 0px;
     border-radius: 10px;
     box-shadow: 0px 0px 42px 6px rgba(255, 255, 255, 0.1);
 }
@@ -49,6 +48,7 @@ body {
 }
 
 .question-title {
+    font-weight: normal;
     margin: 30px;
     font-size: 0.9em;
     text-align: justify;
@@ -65,8 +65,9 @@ body {
     padding: 10px;
     background-color: rgba(11, 11, 19, 0.596);
     color: white;
-    font-family: inherit;
+    font-family: inherit; /* "inherit" serve para que seja atribuído o valor em herança. */
     border-radius: 5px;
+    text-align: left;
     border: none;
 }
 
