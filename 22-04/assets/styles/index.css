@@ -4,10 +4,23 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Comfortaa";
+  src: url('../fonts/Comfortaa-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    position: fixed;
+    font-size: 16px;
+}
+
 .background {
     height: 100vh;
     width: 100vw;
-    background: url("../images/background.avif");
+    background: url("../images/background.jpg");
     background-size: cover;
 }
 
@@ -21,14 +34,14 @@
 
 .quiz-question {
     display: none;
-    background-color: rgb(47, 33, 78);
+    background-color: rgba(22, 26, 37, 0.534);
     color: white;
-    width: 20vw;
+    width: 400px;
     height: fit-content;
     padding: 20px;
-    margin: 50px;
-    gap: 10px;
+    margin: 5% 0px 5% 0px;
     border-radius: 10px;
+    box-shadow: 0px 0px 42px 6px rgba(255, 255, 255, 0.1);
 }
 
 .quiz-question.active {
@@ -37,19 +50,27 @@
 
 .question-title {
     margin: 30px;
-    font-size: 1rem;
+    font-size: 0.9em;
     text-align: justify;
 }
 
 .quiz-options {
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    gap: 30px;
+    margin: 30px;
+    gap: 10px;
 }
 
 .quiz-option {
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: rgba(11, 11, 19, 0.596);
+    color: white;
+    font-family: inherit;
     border-radius: 5px;
+    border: none;
+}
+
+.quiz-option:hover {
+     box-shadow: 0px 0px 42px 2px rgba(255, 255, 255, 0.1);
+     background-color: rgba(38, 38, 56, 0.596);
 }
