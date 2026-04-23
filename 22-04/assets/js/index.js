@@ -6,6 +6,12 @@ let currentQuestionIndex = 0;
     document.querySelectorAll -> pega TODOS os elementos de uma classe e retorna uma lista (tipo array)
 */
 const questions = document.querySelectorAll(".quiz-question");
+// Pega o elemento que irá receber a pontuação
+const pontuacao = document.querySelector(".score");
+// Pega onde irá a informação de quantas questões tem
+const questionInfo = document.querySelector(".questions-info");
+// Insere o total de perguntas para o usuário visualizar
+questionInfo.textContent = `${questions.length}`;
 // Função para ativar a próxima pergunta
 function activateQuestion() {
     /*
@@ -31,6 +37,8 @@ function answer(isCorrect) {
     currentQuestionIndex = currentQuestionIndex + 1;
     // Ativa (mostra) a próxima pergunta
     activateQuestion();
+    // Caso acerte, atualiza a pontuação
+    pontuacao.textContent = `Acertou: ${currentQuestionIndex}`;
   } else {
     // Se a resposta estiver errada
     console.log("Respota errada");
