@@ -19,24 +19,26 @@ input.addEventListener('input', (event) => {
 });
 // Exemplos
 // Trocando atributos
-link.setAttribute("href", "youtube.com")
+link.setAttribute("href", "https://youtube.com")
 // Pegando atributos
 console.log(link.getAttribute("href"));
 console.log(link.getAttribute("id"));
 // Trocando a imagem com um clique
 btnTrocar.addEventListener("click", () => {
     img.setAttribute("src", "https://tse3.mm.bing.net/th/id/OIP.DQrTYjDXhuHWAuYPfdFazAHaEo?rs=1&pid=ImgDetMain&o=7&rm=3");
-    img.setAttribute("alt", "Imagem de uma galáxia")
+    img.setAttribute("alt", "Imagem de uma galáxia ao lado direito, com planetas e estrelas visíveis ao redor")
 });
 // Exercício 2
 btnAlternar.addEventListener("click", () => {
     let imgAtributo = img.getAttribute("src");
     switch (imgAtributo) {
         case IMG_SPACE:
-            img.setAttribute(IMG_GALAXY);
+            img.setAttribute("src", IMG_GALAXY);
+            img.setAttribute("alt", "Imagem de uma galáxia ao lado direito, com planetas e estrelas visíveis ao redor")
             break;
         default:
-            img.setAttribute(IMG_GALAXY);
+            img.setAttribute("src", IMG_SPACE);
+            img.setAttribute("alt", "Imagem azulada do espaço, com planetas e estrelas visíveis")
             break;
     }
 });
