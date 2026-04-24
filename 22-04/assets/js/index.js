@@ -10,10 +10,16 @@ const questions = document.querySelectorAll(".quiz-question");
 const pontuacao = document.querySelector(".score");
 // Pega onde irá a informação de quantas questões tem
 const questionInfo = document.querySelector(".questions-info");
+// Pega a divisória onde está as informações da pontuação
+const scoreInfo = document.querySelector(".score-info");
 // Insere o total de perguntas para o usuário visualizar
 questionInfo.textContent = `${questions.length}`;
 // Função para ativar a próxima pergunta
 function activateQuestion() {
+    // Caso chega na última pergunta, irá mostrar uma mensagem que terminou o quiz
+    if (currentQuestionIndex === questions.length) {
+      scoreInfo.innerHTML = `<b>Quiz finalizado! Acertou: ${currentQuestionIndex} de ${questions.length}</b>`;
+    } 
     /*
         questions[currentQuestionIndex] -> acessa a pergunta atual dentro da lista
         classList.add('active') -> adiciona a classe 'active' na pergunta atual
@@ -25,12 +31,6 @@ function activateQuestion() {
 function answer(isCorrect) {
   // Se a resposta estiver correta
   if (isCorrect) {
-    // Precisa ver porque isso não funciona
-    // if (currentQuestionIndex === questions.length) {
-    //   questionInfo.textContent = "";
-    //   pontuacao.textContent = `Quiz finalizado! \n Acertou: ${currentQuestionIndex} de ${questionInfo}`;
-    //   return;
-    // }
     /*
         classList.remove('active') -> remove a classe
         Isso faz a pergunta atual sumir da tela 
