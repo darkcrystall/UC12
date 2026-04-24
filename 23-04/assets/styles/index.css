@@ -1,13 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.buttons {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 5px;
+}
+
 .boxes {
     height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 .box {
-    background-color: antiquewhite;
+    background-color: #EFEFEF;
     height: 200px;
     width: 200px;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+input {
+    padding: 5px;
+}
+
+#mostrar-input {
+    height: 27px;
+    width: 179x;
+    padding: 5px;
 }
