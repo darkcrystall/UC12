@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  gap: 10px;
+}
+
+.menu nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu nav a:hover {
+  color: cadetblue;
+}
+
+.img-logo {
+  width: 24px;
+}
+
+.wpp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.wpp-img {
+  width: 32px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: white;
+  background-color: brown;
+  font-size: 6px;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.menu-extra {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-extra:hover .menu-dropdown {
+  display: block;
+}
+
+.menu-dropdown {
+  position: absolute;
+  right: 35px;
+  top: 0px;
+  display: none;
+  height: auto;
+  width: 100px;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  gap: 5px;
+}
