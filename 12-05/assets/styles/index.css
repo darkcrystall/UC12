@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container.menu {
+    width: 20%;
+}
+
+.main-menu {
+    margin: 5px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: white;
+    background-color: brown;
+    font-size: 10px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.menu-aside {
+    position: fixed;
+    top: auto;
+    right: 0;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100%;
+    width: 100px;
+    padding: 10px 20px;
+}
+
+.menu-aside a {
+    gap: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    top: 10px;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding: 0px 20px;
+    min-height: 500px;
+    width: 350px;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.btn-buy {
+    width: 100px;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.p-description {
+    text-align: justify;
+}
+
+.card .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: white;
+    background-color: brown;
+    font-size: 12px;
+    height: 24px;
+    width: 32px;
+    text-align: center;
+}
+
+.card-contain {
+    gap: 10px;
+}
+
+.p-title {
+    font-size: 16px;
+}
+
+.logo {
+    height: fit-content;
+    width: 100%;
+}
+
+.logo img {
+    width: 24px;
+    margin: 5px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.btn-help {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.img-help {
+    width: 32px;
+}
