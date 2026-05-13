@@ -9,9 +9,16 @@
     align-items: center;
 }
 
+body {
+    font-family: monospace;
+    background: linear-gradient(90deg, #609f8c, #7b7bf9);
+    min-height: 150vh;
+}
+
 header {
     position: sticky;
     top: 0;
+    z-index: 1;
     background-color: black;
     display: flex;
     align-items: center;
@@ -33,7 +40,7 @@ a {
 }
 
 a:hover {
-    color: cadetblue;
+    color: #5fa08c;
 }
 
 .cart {
@@ -55,15 +62,19 @@ a:hover {
 
 .menu-aside {
     position: fixed;
-    top: auto;
+    top: 0;
     right: 0;
     background-color: black;
     justify-content: center;
+    height: 100vh;
+    width: 120px;
+    padding: 10px;
+}
+
+.menu-aside nav {
+    display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    height: 100%;
-    width: 100px;
-    padding: 10px 20px;
+    gap: 20px;
 }
 
 .menu-aside a {
@@ -78,40 +89,48 @@ section {
 
 .card {
     position: relative;
-    top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 5px;
     background-color: black;
     color: white;
-    flex-direction: column;
-    padding: 0px 20px;
-    min-height: 500px;
-    width: 350px;
-    gap: 10px;
-    border-radius: 5px;
 }
 
 .btn-buy {
-    width: 100px;
+    width: 100%;
     height: 50px;
-    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    background-color: white;
 }
 
 .p-description {
     text-align: justify;
+    line-height: 1.5;
 }
 
 .card .badge {
     position: absolute;
     top: -5px;
     right: -5px;
-    color: white;
+    width: 42px;
+    height: auto;
     background-color: brown;
-    font-size: 12px;
-    height: 24px;
-    width: 32px;
+    color: white;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 16px;
     text-align: center;
 }
 
 .card-contain {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -120,8 +139,8 @@ section {
 }
 
 .logo {
-    height: fit-content;
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -131,7 +150,7 @@ section {
 
 .logo h1 {
     font-size: 20px;
-    color: #ffffff;
+    color: white;
 }
 
 .btn-help {
