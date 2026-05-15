@@ -1,0 +1,36 @@
+/* CSS padrão */
+div {
+  background-color: brown;
+  height: 30vh;
+  font-size: 48px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CSS que vai ser utilizado quando a tela for menor */
+/* max-width: define a largura máxima da tela para o CSS mudar. Abaixo ou igual desse valor, será aplicado esse CSS */
+@media (max-width: 600px) {
+  div {
+    background-color: chocolate;
+  }
+}
+/* orientation: landscape aplica o CSS para telas na horizontal (quando viramos o celular, por exemplo) */
+@media (orientation: landscape) {
+  div {
+    background-color: aquamarine;
+  }
+}
+/* Estilo do botão */
+button {
+    background-color: brown;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 15px;
+}
+button > a {
+    color: white;
+    text-decoration: none;
+}
